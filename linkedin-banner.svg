@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1128 191" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>ABH&amp;Co. — LinkedIn Banner</title>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap');
+    ]]></style>
+    <pattern id="lattice" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 30,0 L 60,30 L 30,60 L 0,30 Z M 30,5 L 55,30 L 30,55 L 5,30 Z"
+            fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="1"/>
+    </pattern>
+    <!-- Large ghost arch as background watermark -->
+    <g id="ghostArch">
+      <path fill-rule="evenodd"
+            d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+               M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+            fill="#F5EDD6"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1128" height="191" fill="#0A0907"/>
+  <!-- Lattice texture -->
+  <rect width="1128" height="191" fill="url(#lattice)" opacity="0.045"/>
+
+  <!-- Ghost arch watermark, large, right-aligned -->
+  <g transform="translate(880, -100) scale(3.5)" opacity="0.035">
+    <path fill-rule="evenodd"
+          d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+             M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+          fill="#F5EDD6"/>
+  </g>
+
+  <!-- Gold frame: top and bottom rules -->
+  <rect x="0" y="0" width="1128" height="2" fill="#C9A84C"/>
+  <rect x="0" y="189" width="1128" height="2" fill="#C9A84C"/>
+
+  <!-- Gold inner border rectangle -->
+  <rect x="20" y="12" width="1088" height="167" fill="none" stroke="#C9A84C" stroke-width="0.6" opacity="0.3"/>
+
+  <!-- Arch Gate Mark: left positioned, scaled to 130px height -->
+  <!-- scale = 130/120 = 1.083, width = 108.3 -->
+  <g transform="translate(44, 30) scale(1.083)">
+    <path fill-rule="evenodd"
+          d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+             M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+          fill="#F5EDD6"/>
+    <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
+    <path d="M 23,50 A 27,27 0 0 1 77,50"
+          fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
+    <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
+    <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+  </g>
+  <!-- Mark ends at approx x=44+117=161 -->
+
+  <!-- Gold vertical separator -->
+  <rect x="182" y="28" width="1" height="135" fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Arabic primary name: centered in remaining space -->
+  <text x="660" y="82"
+        font-family="'Noto Naskh Arabic', 'Arabic Typesetting', serif"
+        font-size="52" font-weight="700" fill="#F5EDD6"
+        text-anchor="middle" direction="rtl">
+    &#x639;&#x628;&#x62F;&#x627;&#x644;&#x644;&#x647; &#x628;&#x646; &#x62D;&#x627;&#x631;&#x628; &#x648;&#x645;&#x634;&#x627;&#x631;&#x643;&#x648;&#x647;
+  </text>
+
+  <!-- Thin gold rule under Arabic -->
+  <rect x="200" y="97" width="900" height="0.8" fill="#C9A84C" opacity="0.4"/>
+
+  <!-- English wordmark -->
+  <text x="660" y="127"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        text-anchor="middle" fill="#C9A84C">
+    <tspan font-size="36" font-weight="600" letter-spacing="0.12em">ABH</tspan><tspan font-size="28" font-weight="300" font-style="italic">&amp;Co.</tspan>
+  </text>
+
+  <!-- English full name -->
+  <text x="660" y="152"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="11" font-weight="400" fill="#F5EDD6" opacity="0.6"
+        text-anchor="middle" letter-spacing="0.28em">
+    ABDALLAH BIN HAREB AND COMPANY · LAWYERS &amp; COUNSELORS AT LAW · AJMAN, UAE
+  </text>
+</svg>

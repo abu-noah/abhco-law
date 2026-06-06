@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>ABH&amp;Co. — Social Avatar</title>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Naskh+Arabic:wght@400;600;700&family=Montserrat:wght@300;400&display=swap');
+    ]]></style>
+    <!-- Subtle arabesque diamond lattice pattern -->
+    <pattern id="lattice" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 25,0 L 50,25 L 25,50 L 0,25 Z
+               M 25,4 L 46,25 L 25,46 L 4,25 Z"
+            fill="none" stroke="#C9A84C" stroke-width="0.35" opacity="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep black background -->
+  <rect width="400" height="400" fill="#0A0907"/>
+
+  <!-- Arabesque lattice texture, very subtle -->
+  <rect width="400" height="400" fill="url(#lattice)" opacity="0.05"/>
+
+  <!-- Arch Gate Mark: ivory on black, scaled 2.0 (200×240), centered -->
+  <!-- x center: (400-200)/2=100, y start: 60 -->
+  <g transform="translate(100, 52) scale(2.0)">
+    <path fill-rule="evenodd"
+          d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+             M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+          fill="#F5EDD6"/>
+    <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
+    <path d="M 23,50 A 27,27 0 0 1 77,50"
+          fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
+    <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
+    <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+  </g>
+  <!-- Mark occupies: x:100–300, y:52–292 -->
+
+  <!-- Gold separator -->
+  <rect x="80" y="306" width="240" height="1" fill="#C9A84C"/>
+
+  <!-- ABH&Co. wordmark -->
+  <text x="200" y="336"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        text-anchor="middle" fill="#F5EDD6">
+    <tspan font-size="30" font-weight="600" letter-spacing="0.12em">ABH</tspan><tspan font-size="24" font-weight="300" font-style="italic" letter-spacing="0.02em">&amp;Co.</tspan>
+  </text>
+
+  <!-- Arabic name, small -->
+  <text x="200" y="358"
+        font-family="'Noto Naskh Arabic', serif"
+        font-size="16" font-weight="600" fill="#C9A84C"
+        text-anchor="middle" direction="rtl">
+    &#x639;&#x628;&#x62F;&#x627;&#x644;&#x644;&#x647; &#x628;&#x646; &#x62D;&#x627;&#x631;&#x628;
+  </text>
+
+  <!-- Label line -->
+  <text x="200" y="376"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="9" font-weight="300" fill="#C9A84C" opacity="0.7"
+        text-anchor="middle" letter-spacing="0.25em">
+    AJMAN · UAE
+  </text>
+</svg>

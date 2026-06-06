@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 312" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>ABH&amp;Co. — Facebook Cover</title>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Montserrat:wght@300;400&display=swap');
+    ]]></style>
+    <pattern id="latticeFB" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 25,0 L 50,25 L 25,50 L 0,25 Z M 25,4 L 46,25 L 25,46 L 4,25 Z"
+            fill="none" stroke="#C9A84C" stroke-width="0.35" opacity="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="820" height="312" fill="#0A0907"/>
+  <rect width="820" height="312" fill="url(#latticeFB)" opacity="0.05"/>
+
+  <!-- Ghost arch -->
+  <g transform="translate(630, -30) scale(3.0)" opacity="0.04">
+    <path fill-rule="evenodd"
+          d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+             M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+          fill="#F5EDD6"/>
+  </g>
+
+  <!-- Frame -->
+  <rect x="0" y="0" width="820" height="2.5" fill="#C9A84C"/>
+  <rect x="0" y="309.5" width="820" height="2.5" fill="#C9A84C"/>
+
+  <!-- Arch mark: left, scaled to 256px height (scale=256/120=2.133) -->
+  <!-- Centered vertically: (312-256)/2=28 -->
+  <g transform="translate(36, 28) scale(2.133)">
+    <path fill-rule="evenodd"
+          d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
+             M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
+          fill="#F5EDD6"/>
+    <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
+    <path d="M 23,50 A 27,27 0 0 1 77,50"
+          fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
+    <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
+    <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+  </g>
+  <!-- Mark: x:36–249, y:28–284 -->
+
+  <!-- Separator -->
+  <rect x="268" y="34" width="1" height="244" fill="#C9A84C" opacity="0.4"/>
+
+  <!-- Arabic name -->
+  <text x="548" y="120"
+        font-family="'Noto Naskh Arabic', 'Arabic Typesetting', serif"
+        font-size="42" font-weight="700" fill="#F5EDD6"
+        text-anchor="middle" direction="rtl">
+    &#x639;&#x628;&#x62F;&#x627;&#x644;&#x644;&#x647; &#x628;&#x646; &#x62D;&#x627;&#x631;&#x628; &#x648;&#x645;&#x634;&#x627;&#x631;&#x643;&#x648;&#x647;
+  </text>
+
+  <!-- Gold rule -->
+  <rect x="284" y="138" width="520" height="0.8" fill="#C9A84C" opacity="0.4"/>
+
+  <!-- English ABH&Co. -->
+  <text x="548" y="186"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        text-anchor="middle" fill="#C9A84C">
+    <tspan font-size="44" font-weight="600" letter-spacing="0.1em">ABH</tspan><tspan font-size="36" font-weight="300" font-style="italic">&amp;Co.</tspan>
+  </text>
+
+  <!-- Full name -->
+  <text x="548" y="220"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="10" font-weight="400" fill="#F5EDD6" opacity="0.5"
+        text-anchor="middle" letter-spacing="0.22em">
+    ABDALLAH BIN HAREB AND COMPANY
+  </text>
+
+  <!-- Tagline -->
+  <text x="548" y="248"
+        font-family="'Montserrat', Arial, sans-serif"
+        font-size="9.5" font-weight="300" fill="#C9A84C" opacity="0.65"
+        text-anchor="middle" letter-spacing="0.18em">
+    LAWYERS &amp; COUNSELORS AT LAW · AJMAN, UAE
+  </text>
+</svg>
