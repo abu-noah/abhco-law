@@ -1,5 +1,9 @@
-# ABH&Co. Website V2
+# ABH&Co. Website V2.1
 ## Deployment & Handoff Guide for Execution Agent
+
+> **V2.1 is a design patch over V2** — new ABH crest logo system, lighter ivory/parchment
+> visual tone, premium menu button, floating back-to-top, more motion, and team portraits.
+> See `V2_1_CHANGELOG.md` for the full list and `V2_1_EXECUTION_NOTES.md` for deploy steps.
 
 ---
 
@@ -32,13 +36,13 @@ V2 replaces V1 via GitHub Pages on the same repository.
 ## PACKAGE CONTENTS
 
 ```
-ABHCo_V2_Claude_Website_Package/
+ABHCo_V2_1_Claude_Website_Package/
 ├── index.html              ← Main site (Arabic-first, bilingual)
 ├── styles.css              ← Full V2 design system (~2,000 lines)
 ├── script.js               ← All interactivity (~400 lines)
 ├── README.md               ← This file
-├── V2_CHANGELOG.md         ← V1 → V2 differences
-├── V2_EXECUTION_NOTES.md   ← Items pending approval / unverified
+├── V2_1_CHANGELOG.md       ← V2 → V2.1 design patch differences
+├── V2_1_EXECUTION_NOTES.md ← Deploy steps + items pending approval
 └── assets/
     ├── favicon.svg
     ├── logo-mark.svg
@@ -56,7 +60,9 @@ ABHCo_V2_Claude_Website_Package/
     ├── x-profile-banner.svg
     ├── tiktok-profile-avatar.svg
     ├── youtube-banner.svg
-    └── og-preview.svg
+    ├── og-preview.svg
+    ├── logo-wordmark.svg · logo-gold-on-cream.svg · logo-cream-on-dark.svg
+    └── team/  (member-1.svg … member-4.svg — portrait illustrations)
 ```
 
 ---
@@ -91,8 +97,8 @@ cd abhco-law
 rm -f *.html *.css *.js
 
 # Copy V2 files in
-cp /path/to/ABHCo_V2_Claude_Website_Package/* .
-cp -r /path/to/ABHCo_V2_Claude_Website_Package/assets ./assets
+cp /path/to/ABHCo_V2_1_Claude_Website_Package/* .
+cp -r /path/to/ABHCo_V2_1_Claude_Website_Package/assets ./assets
 
 # Commit and push
 git add -A

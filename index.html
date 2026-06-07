@@ -17,16 +17,14 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="ABH&amp;Co. — Lawyers &amp; Counsellors at Law | عبدالله بن حارب ومشاركوه">
   <meta property="og:description" content="محامون ومستشارون قانونيون في عجمان والإمارات العربية المتحدة — Lawyers &amp; Counsellors, Ajman, UAE">
-  <!-- Adjusted asset path from 'assets/og-preview.svg' to root-level due to GitHub Pages upload -- installer fix -->
-  <meta property="og:image" content="og-preview.svg">
+  <meta property="og:image" content="assets/og-preview.svg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ar_AE">
   <meta property="og:locale:alternate" content="en_AE">
 
   <!-- Favicon -->
-  <!-- Adjusted asset path from 'assets/favicon.svg' to root-level due to GitHub Pages upload -- installer fix -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
   <!-- Google Fonts: Noto Naskh Arabic + Cormorant Garamond + Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,16 +92,15 @@
 
     <!-- Brand -->
     <a href="#hero" class="nav-brand" aria-label="ABH&Co. — الصفحة الرئيسية">
-      <!-- Arch gate mark (inline SVG) -->
-      <svg class="nav-mark" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path fill-rule="evenodd"
-              d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
-                 M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
-              fill="#0A0907"/>
-        <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
-        <path d="M 23,50 A 27,27 0 0 1 77,50" fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
-        <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
-        <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+      <!-- ABH crest mark (inline SVG, V2.1) -->
+      <svg class="nav-mark" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 22,144 L 22,50 C 22,28 39,14 60,14 C 81,14 98,28 98,50 L 98,144 L 22,144 Z" fill="none" stroke="#C9A84C" stroke-width="2.4"/>
+        <path d="M 28,138 L 28,50 C 28,31.5 42.5,19.5 60,19.5 C 77.5,19.5 92,31.5 92,50 L 92,138 L 28,138 Z" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.7"/>
+        <polygon points="60,21 64,26 60,31 56,26" fill="#C9A84C"/>
+        <text x="60" y="84" text-anchor="middle" font-family="'Cormorant Garamond',Garamond,serif" font-size="34" font-weight="600" letter-spacing="0.04em" fill="currentColor">ABH</text>
+        <rect x="44" y="94" width="32" height="1" fill="#C9A84C"/>
+        <text x="60" y="110" text-anchor="middle" font-family="'Montserrat',sans-serif" font-size="8.5" font-weight="500" letter-spacing="0.34em" fill="#C9A84C">&amp; CO.</text>
+        <polygon points="60,124 63,128 60,132 57,128" fill="#C9A84C" opacity="0.85"/>
       </svg>
       <div class="nav-wordmark">
         <span class="nav-name-ar ar-text">عبدالله بن حارب ومشاركوه</span>
@@ -142,8 +139,10 @@
         <span class="ar-text">طلب استشارة</span>
         <span class="en-text">Request Consultation</span>
       </a>
-      <button id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-mobile">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      <button id="hamburger" class="menu-trigger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-mobile">
+        <span class="menu-trigger-icon" aria-hidden="true"><span class="bar"></span><span class="bar"></span></span>
+        <span class="menu-trigger-label ar-text">القائمة</span>
+        <span class="menu-trigger-label en-text">Menu</span>
       </button>
     </div>
 
@@ -170,17 +169,21 @@
 <section id="hero" aria-label="Hero">
 
   <div class="hero-content">
-    <!-- Arch Gate mark -->
+    <!-- ABH crest mark (animated, V2.1) -->
     <div class="hero-mark-wrap">
-      <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path fill-rule="evenodd"
-              d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z
-                 M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z"
-              fill="#0A0907"/>
-        <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
-        <path d="M 23,50 A 27,27 0 0 1 77,50" fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
-        <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
-        <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+      <svg viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hero-crest">
+        <defs>
+          <linearGradient id="heroCrestGold" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#E8CE87"/><stop offset="0.5" stop-color="#C9A84C"/><stop offset="1" stop-color="#8A6518"/>
+          </linearGradient>
+        </defs>
+        <path class="crest-frame-outer" d="M 22,144 L 22,50 C 22,28 39,14 60,14 C 81,14 98,28 98,50 L 98,144 L 22,144 Z" fill="none" stroke="url(#heroCrestGold)" stroke-width="2"/>
+        <path class="crest-frame-inner" d="M 28,138 L 28,50 C 28,31.5 42.5,19.5 60,19.5 C 77.5,19.5 92,31.5 92,50 L 92,138 L 28,138 Z" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.7"/>
+        <polygon class="crest-key-top" points="60,21 64,26 60,31 56,26" fill="url(#heroCrestGold)"/>
+        <text class="crest-abh" x="60" y="84" text-anchor="middle" font-family="'Cormorant Garamond',Garamond,serif" font-size="34" font-weight="600" letter-spacing="0.04em" fill="#0A0907">ABH</text>
+        <rect class="crest-rule" x="44" y="94" width="32" height="1" fill="#C9A84C"/>
+        <text class="crest-co" x="60" y="110" text-anchor="middle" font-family="'Montserrat',sans-serif" font-size="8.5" font-weight="500" letter-spacing="0.34em" fill="#8A6518">&amp; CO.</text>
+        <polygon class="crest-key-bottom" points="60,124 63,128 60,132 57,128" fill="#C9A84C" opacity="0.85"/>
       </svg>
     </div>
 
@@ -471,7 +474,7 @@
 <!-- ═══════════════════════════════════════════════
      UAE COVERAGE
 ═══════════════════════════════════════════════ -->
-<section id="coverage" class="section section--dark" aria-labelledby="coverage-heading">
+<section id="coverage" class="section section--parchment" aria-labelledby="coverage-heading">
   <div class="container" style="position:relative;z-index:2;">
     <header class="section-header reveal">
       <span class="section-label ar-text">نطاق الخدمة</span>
@@ -543,10 +546,8 @@
 
       <!-- Member 1 -->
       <article class="team-card reveal reveal-delay-1">
-        <div class="team-portrait" aria-hidden="true">
-          <div class="team-avatar">
-            <span class="team-avatar-initials">AY</span>
-          </div>
+        <div class="team-portrait">
+          <img class="team-portrait-img" src="assets/team/member-1.svg" alt="" loading="lazy" width="400" height="400">
         </div>
         <div class="team-info">
           <p class="team-name-ar ar-text">عبدالله يوسف المهيري</p>
@@ -558,10 +559,8 @@
 
       <!-- Member 2 (mock) -->
       <article class="team-card reveal reveal-delay-2">
-        <div class="team-portrait" aria-hidden="true">
-          <div class="team-avatar">
-            <span class="team-avatar-initials">SM</span>
-          </div>
+        <div class="team-portrait">
+          <img class="team-portrait-img" src="assets/team/member-2.svg" alt="" loading="lazy" width="400" height="400">
         </div>
         <div class="team-info">
           <p class="team-name-ar ar-text">سارة محمد السويدي</p>
@@ -573,10 +572,8 @@
 
       <!-- Member 3 (mock) -->
       <article class="team-card reveal reveal-delay-3">
-        <div class="team-portrait" aria-hidden="true">
-          <div class="team-avatar">
-            <span class="team-avatar-initials">OK</span>
-          </div>
+        <div class="team-portrait">
+          <img class="team-portrait-img" src="assets/team/member-3.svg" alt="" loading="lazy" width="400" height="400">
         </div>
         <div class="team-info">
           <p class="team-name-ar ar-text">عمر خالد الراشدي</p>
@@ -588,10 +585,8 @@
 
       <!-- Member 4 (mock) -->
       <article class="team-card reveal reveal-delay-4">
-        <div class="team-portrait" aria-hidden="true">
-          <div class="team-avatar">
-            <span class="team-avatar-initials">FN</span>
-          </div>
+        <div class="team-portrait">
+          <img class="team-portrait-img" src="assets/team/member-4.svg" alt="" loading="lazy" width="400" height="400">
         </div>
         <div class="team-info">
           <p class="team-name-ar ar-text">فاطمة ناصر الحمادي</p>
@@ -685,7 +680,7 @@
 <!-- ═══════════════════════════════════════════════
      CONSULTATION INTAKE WIZARD
 ═══════════════════════════════════════════════ -->
-<section id="intake" class="section section--dark" aria-labelledby="intake-heading">
+<section id="intake" class="section section--parchment" aria-labelledby="intake-heading">
   <div class="container" style="position:relative;z-index:2;">
     <header class="section-header reveal">
       <span class="section-label ar-text">ابدأ معنا</span>
@@ -1005,16 +1000,16 @@
 <!-- ═══════════════════════════════════════════════
      CONTACT
 ═══════════════════════════════════════════════ -->
-<section id="contact" class="section section--black" aria-labelledby="contact-heading">
+<section id="contact" class="section section--parchment" aria-labelledby="contact-heading">
   <div class="container">
     <header class="section-header reveal">
-      <span class="section-label" style="color:var(--gold)">
+      <span class="section-label" style="color:var(--gold-deep)">
         <span class="ar-text">تواصل معنا</span>
         <span class="en-text">Contact Us</span>
       </span>
       <h2 id="contact-heading">
-        <span class="section-title-ar ar-text" style="color:var(--ivory)">نحن في خدمتك</span>
-        <span class="section-title-en en-text" style="color:var(--ivory)">We're Here to Help</span>
+        <span class="section-title-ar ar-text">نحن في خدمتك</span>
+        <span class="section-title-en en-text">We're Here to Help</span>
       </h2>
       <span class="gold-rule" aria-hidden="true"></span>
     </header>
@@ -1170,23 +1165,30 @@
 
       <!-- Logo col -->
       <div class="footer-logo-col">
-        <!-- Gold-on-black logo inline SVG -->
-        <svg class="footer-logo-svg" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABH&Co. Logo">
-          <g transform="translate(197.5, 4) scale(0.85)">
-            <path fill-rule="evenodd" d="M 0,50 A 50,50 0 0 1 100,50 L 100,120 L 0,120 Z M 20,50 A 30,30 0 0 1 80,50 L 80,120 L 20,120 Z" fill="#F5EDD6"/>
-            <polygon points="50,5 55,10 50,15 45,10" fill="#C9A84C"/>
-            <path d="M 23,50 A 27,27 0 0 1 77,50" fill="none" stroke="#C9A84C" stroke-width="0.9" stroke-linecap="round"/>
-            <rect x="20" y="83" width="60" height="2" fill="#C9A84C"/>
-            <rect x="0" y="117" width="100" height="3" fill="#C9A84C"/>
+        <!-- ABH crest bilingual lockup — cream on dark (V2.1) -->
+        <svg class="footer-logo-svg" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ABH&Co. Logo">
+          <defs>
+            <linearGradient id="footerCrestGold" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#E8CE87"/><stop offset="0.5" stop-color="#C9A84C"/><stop offset="1" stop-color="#8A6518"/>
+            </linearGradient>
+          </defs>
+          <g transform="translate(170,8)">
+            <path d="M 22,144 L 22,50 C 22,28 39,14 60,14 C 81,14 98,28 98,50 L 98,144 L 22,144 Z" fill="none" stroke="url(#footerCrestGold)" stroke-width="2"/>
+            <path d="M 28,138 L 28,50 C 28,31.5 42.5,19.5 60,19.5 C 77.5,19.5 92,31.5 92,50 L 92,138 L 28,138 Z" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.6"/>
+            <polygon points="60,21 64,26 60,31 56,26" fill="url(#footerCrestGold)"/>
+            <text x="60" y="84" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="34" font-weight="600" letter-spacing="0.04em" fill="#F5EDD6">ABH</text>
+            <rect x="44" y="94" width="32" height="1" fill="#C9A84C"/>
+            <text x="60" y="110" text-anchor="middle" font-family="'Montserrat',sans-serif" font-size="8.5" font-weight="500" letter-spacing="0.34em" fill="#C9A84C">&amp; CO.</text>
+            <polygon points="60,124 63,128 60,132 57,128" fill="#C9A84C" opacity="0.85"/>
           </g>
-          <rect x="40" y="113" width="400" height="1" fill="#C9A84C"/>
-          <text x="240" y="135" font-family="'Noto Naskh Arabic','Arabic Typesetting',serif" font-size="26" font-weight="700" fill="#F5EDD6" text-anchor="middle" direction="rtl">عبدالله بن حارب ومشاركوه</text>
-          <text x="240" y="152" font-family="'Noto Naskh Arabic','Arabic Typesetting',serif" font-size="12" font-weight="400" fill="#C9A84C" text-anchor="middle" direction="rtl">محامون ومستشارون قانونيون</text>
-          <rect x="80" y="162" width="320" height="0.6" fill="#C9A84C" opacity="0.5"/>
-          <text x="240" y="180" font-family="'Cormorant Garamond',Garamond,'Times New Roman',Georgia,serif" text-anchor="middle" fill="#C9A84C">
-            <tspan font-size="22" font-weight="600" letter-spacing="0.12em">ABH</tspan><tspan font-size="18" font-weight="300" font-style="italic">&amp;Co.</tspan>
+          <rect x="60" y="170" width="340" height="1" fill="#C9A84C" opacity="0.8"/>
+          <text x="230" y="200" text-anchor="middle" font-family="'Noto Naskh Arabic','Arabic Typesetting',serif" font-size="24" font-weight="700" fill="#F5EDD6" direction="rtl">عبدالله بن حارب ومشاركوه</text>
+          <text x="230" y="222" text-anchor="middle" font-family="'Noto Naskh Arabic','Arabic Typesetting',serif" font-size="12" font-weight="400" fill="#C9A84C" direction="rtl">محامون ومستشارون قانونيون</text>
+          <rect x="120" y="234" width="220" height="0.6" fill="#C9A84C" opacity="0.5"/>
+          <text x="230" y="262" text-anchor="middle" fill="#C9A84C">
+            <tspan font-family="'Cormorant Garamond',Garamond,serif" font-size="22" font-weight="600" letter-spacing="0.1em">ABH</tspan><tspan font-family="'Cormorant Garamond',Garamond,serif" font-size="18" font-weight="300" font-style="italic">&amp;Co.</tspan>
           </text>
-          <text x="240" y="194" font-family="'Montserrat','Helvetica Neue',Arial,sans-serif" font-size="6.5" font-weight="400" fill="#F5EDD6" opacity="0.55" text-anchor="middle" letter-spacing="0.28em">ABDALLAH BIN HAREB AND COMPANY</text>
+          <text x="230" y="278" text-anchor="middle" font-family="'Montserrat','Helvetica Neue',Arial,sans-serif" font-size="6.5" font-weight="400" fill="#F5EDD6" opacity="0.55" letter-spacing="0.28em">ABDALLAH BIN HAREB AND COMPANY</text>
         </svg>
         <span class="footer-tagline-ar ar-text">محامون ومستشارون قانونيون في عجمان والإمارات العربية المتحدة</span>
         <span class="footer-tagline-en en-text">Lawyers &amp; Counsellors at Law<br>Ajman, United Arab Emirates</span>
@@ -1244,6 +1246,20 @@
 </footer>
 
 </main><!-- /main -->
+
+
+<!-- ═══════════════════════════════════════════════
+     FLOATING BACK-TO-TOP (with scroll-progress ring)
+═══════════════════════════════════════════════ -->
+<button id="back-to-top" class="back-to-top" aria-label="العودة إلى الأعلى / Back to top">
+  <svg class="btt-ring" viewBox="0 0 52 52" aria-hidden="true">
+    <circle class="btt-track" cx="26" cy="26" r="23"/>
+    <circle class="btt-bar" cx="26" cy="26" r="23"/>
+  </svg>
+  <svg class="btt-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
+  </svg>
+</button>
 
 
 <!-- ═══════════════════════════════════════════════

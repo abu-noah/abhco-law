@@ -652,8 +652,37 @@
   });
 
   /* ─────────────────────────────────────────────
-     DONE
+     23. FLOATING BACK-TO-TOP + SCROLL PROGRESS RING
   ───────────────────────────────────────────── */
-  console.info('[ABH&Co. V2] Script loaded. Lang: ' + currentLang);
+  const backToTop = qs('#back-to-top');
+  const bttBar    = qs('.btt-bar');
+  const RING_CIRC = 144.5; // 2 * PI * 23
+
+  if (backToTop) {
+    function updateBackToTop() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? scrollTop / docHeight : 0;
+
+      // progress ring
+      if (bttBar) {
+        bttBar.style.strokeDashoffset = (RING_CIRC * (1 - pct)).toFixed(1);
+      }
+      // show after one viewport
+      if (scrollTop > window.innerHeight * 0.6) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }
+    window.addEventListener('scroll', updateBackToTop, { passive: true });
+    updateBackToTop();
+
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+
 
 }());
